@@ -1,0 +1,22 @@
+.interface{
+  position: absolute;
+  left: 27%;
+  top: 10%;
+  background: white;
+  height: 600px;
+  width: 600px;
+}
+
+.xo{
+  height: 190px;
+  width: 190px;
+  background: slategray;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
+
+.btn{
+  width: 50px;
+  height: 25px;
+}
