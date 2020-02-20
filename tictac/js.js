@@ -93,8 +93,6 @@ function livre(){
     &&   xo[vence[c][1]].innerHTML == op[0])
     {
          xo[vence[c][2]].innerHTML = op[1];
-         //console.log("DEFESA");
-         //console.log(vence[c][1]);
          analisa = false;
          break;
     }
@@ -102,8 +100,6 @@ function livre(){
     && xo[vence[c][2]].innerHTML == op[0])
     {
         xo[vence[c][1]].innerHTML = op[1];
-        //console.log("DEFESA");
-        //console.log(vence[c][1]);
         analisa = false;
         break;
     }
@@ -112,8 +108,6 @@ function livre(){
     {
         xo[vence[c][0]].innerHTML = op[1];
         analisa = false;
-        //console.log("DEFESA");
-        //console.log(vence[c][0]);
         break;
     }
   }
@@ -130,8 +124,6 @@ function atack(){
     {
          xo[vence[c][2]].innerHTML = op[1];
          test = false;
-         //console.log("ATAQUE");
-         //console.log(vence[c][2]);
          break;
     }
      else if(xo[vence[c][0]].innerHTML == op[1] &&
@@ -139,8 +131,6 @@ function atack(){
     {
         xo[vence[c][1]].innerHTML = op[1];
         test = false;
-        //console.log("ATAQUE");
-        //console.log(vence[c][1]);
         break;
     }
      else if(xo[vence[c][1]].innerHTML == op[1] &&
@@ -148,8 +138,6 @@ function atack(){
     {
         xo[vence[c][0]].innerHTML = op[1];
         test = false;
-        //console.log("ATAQUE");
-        //console.log(vence[c][0]);
         break;
     }
   }
@@ -167,8 +155,6 @@ function segue(){
     } else if(posicao < 0){
       posicao = 0;
     }
-    //console.log("Tanto faz");
-    //console.log(posicao);
     if(cont && xo[posicao].innerHTML != op[0] && xo[posicao].innerHTML != op[1]){
       xo[posicao].innerHTML = op[1];
       break;
