@@ -34,15 +34,12 @@ function venceu(){
       //ocupadas pelo mesmo simbolo
        xo[vence[c][1]].innerHTML == op[0] &&
        xo[vence[c][2]].innerHTML == op[0]){
-         console.log("venceu o X")
       return {winner : "X", pos : c};
     } else if(xo[vence[c][0]].innerHTML == op[1] && // verifica tambem
               xo[vence[c][1]].innerHTML == op[1] &&
               xo[vence[c][2]].innerHTML == op[1]){
-                console.log("venceu o O")
        return {winner : "O", pos : c};
     } else if(velha()){ // verifica se deu velha
-      console.log("velha")
       return {winner : "tie"};
     }
   }
